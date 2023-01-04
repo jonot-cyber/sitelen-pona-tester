@@ -5,12 +5,12 @@ import wordlist from './wordlist';
 
 function generateWord(exclude = "") {
   // get random item from wordlist
-  let word = wordlist.filter(w => w != exclude)[Math.floor(Math.random() * wordlist.length)];
+  let word = wordlist.filter(w => w !== exclude)[Math.floor(Math.random() * wordlist.length)];
   return word;
 }
 
 function showCorrect(guess, correctWord) {
-  if (guess == correctWord) {
+  if (guess === correctWord) {
     alert("Correct!");
   } else {
     alert(`Incorrect. The correct word was "${correctWord}"`);
