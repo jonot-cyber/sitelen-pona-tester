@@ -35,9 +35,11 @@ function App() {
   const [word, setWord] = useState(generateWord())
 
   return (
-    <div>
+    <div id="app">
       <Word word={word} />
-      {generateButtons(word).map((w, i) => <button key={i} onClick={() => {showCorrect(w, word); setWord(generateWord())}}>{w}</button>)}
+      <div id="buttons">
+        {generateButtons(word).map((w, i) => <button key={i} onClick={() => {showCorrect(w, word); setWord(generateWord())}}>{w}</button>)}
+      </div>
     </div>
   );
 }

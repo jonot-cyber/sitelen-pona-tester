@@ -130,7 +130,7 @@ const wordlist = [
     "namako",
     "pake",
     "leko",
-    "tonsi",
+    // "tonsi", not in font
     "kijetesantakalu",
 ]
 
