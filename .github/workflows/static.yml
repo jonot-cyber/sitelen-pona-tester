@@ -40,6 +40,6 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy
-        uses: actions/upload-pages-artifact@v1.0
+        uses: actions/upload-pages-artifact@v1.0.7
         with:
           path: build
