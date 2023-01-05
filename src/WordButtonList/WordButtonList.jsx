@@ -30,6 +30,7 @@ function WordButtonList(props) {
         } else {
             alert(`Incorrect! The correct answer was ${props.word}.`)
         }
+        props.answer()
     }
     
     return (
