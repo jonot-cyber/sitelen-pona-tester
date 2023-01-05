@@ -2,7 +2,7 @@
   "name": "sitelen-pona-tester",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jonot.me/sitelen-pona-tester",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
