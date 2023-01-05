@@ -12,10 +12,6 @@ function getWord() {
 function App() {
   const [word, setWord] = useState(getWord());
 
-  function answer() {
-    setWord(getWord());
-  }
-
   return (
     <div>
       <Word word={word}/>
