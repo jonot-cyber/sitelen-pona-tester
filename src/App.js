@@ -19,7 +19,7 @@ function App() {
   return (
     <div>
       <Word word={word}/>
-      <WordButtonList word={word} answer={answer}/>
+      <WordButtonList word={word} answer={() => setWord(getWord())}/>
     </div>
   )
 }
