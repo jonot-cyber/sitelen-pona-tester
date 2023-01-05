@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'sitelen-pona-pona';
+    src: local('sitelen-pona-pona'), url('../fonts/sitelen-pona-pona.otf') format('opentype');
+}
+
+.word {
+    font-family: 'sitelen-pona-pona';
+}
