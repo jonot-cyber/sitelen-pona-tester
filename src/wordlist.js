@@ -131,7 +131,7 @@ const wordlist = [
     "pake",
     "leko",
     // "tonsi", not in font
-    "kijetesantakalu",
+    // "kijetesantakalu", not in font
 ]
 
 export default wordlist
