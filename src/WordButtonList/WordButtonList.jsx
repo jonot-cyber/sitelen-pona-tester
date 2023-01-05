@@ -24,10 +24,18 @@ function generateButtons(correctWord) {
 }
 
 function WordButtonList(props) {
+    function answer(anAnswer) {
+        if (anAnswer === props.word) {
+            alert("Correct!")
+        } else {
+            alert(`Incorrect! The correct answer was ${props.word}.`)
+        }
+    }
+    
     return (
         <div>
             {generateButtons(props.word).map((word) => (
-                <WordButton word={word} />
+                <WordButton word={word} answer={(a) => {answer(a)}} />
             ))}
         </div>
     );

@@ -1,5 +1,5 @@
 function WordButton(props) {
-    return <button>{props.word}</button>;
+    return <button onClick={() => props.answer(props.word)}>{props.word}</button>;
 }
 
 export default WordButton;
