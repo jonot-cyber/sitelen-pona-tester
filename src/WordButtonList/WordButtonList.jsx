@@ -36,8 +36,8 @@ function WordButtonList(props) {
     
     return (
         <div class="wordbuttonlist-container">
-            {generateButtons(props.word).map((word) => (
-                <WordButton word={word} answer={(a) => {answer(a)}} />
+            {generateButtons(props.word).map((word, i) => (
+                <WordButton number={i} word={word} answer={(a) => {answer(a)}} />
             ))}
         </div>
     );
