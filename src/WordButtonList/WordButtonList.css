@@ -1,0 +1,22 @@
+.wordbuttonlist-container {
+    display: flex;
+    width: 100vw;
+    flex: 2;
+}
+
+.wordbuttonlist-container button {
+    flex: 1;
+    font-size: 3em;
+    background-color: white;
+    margin: 0.5em;
+}
+
+@media (max-width: 1000px) {
+    .wordbuttonlist-container {
+        flex-direction: column;
+    }
+
+    .wordbuttonlist-container button {
+        margin: 0.1em;
+    }
+}

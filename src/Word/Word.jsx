@@ -2,7 +2,7 @@ import "./Word.css"
 
 function Word(props) {
     return (
-        <h1 className="word">{props.word}</h1>
+        <div class="word-center"><h1 className="word">{props.word}</h1></div>
     )
 }
 

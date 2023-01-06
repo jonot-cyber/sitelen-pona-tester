@@ -5,4 +5,19 @@
 
 .word {
     font-family: 'sitelen-pona-pona';
+    font-size: 60vh;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .word {
+        font-size: 45vh;
+    }
+}
+
+.word-center {
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    flex: 100;
 }
