@@ -20,4 +20,5 @@
     display: grid;
     justify-content: center;
     flex: 100;
+    user-select: none;
 }
