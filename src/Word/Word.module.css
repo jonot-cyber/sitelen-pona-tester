@@ -15,7 +15,7 @@
     }
 }
 
-.word-center {
+.center {
     width: 100vw;
     display: grid;
     justify-content: center;

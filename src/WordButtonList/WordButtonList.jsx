@@ -1,6 +1,6 @@
 import WordButton from "../WordButton/WordButton";
 import wordlist from "../wordlist";
-import "./WordButtonList.css";
+import styles from "./WordButtonList.module.css"
 
 function generateButtons(correctWord) {
     const possibleIncorrectWords = wordlist.filter(
@@ -35,7 +35,7 @@ function WordButtonList(props) {
     }
     
     return (
-        <div class="wordbuttonlist-container">
+        <div className={styles.container}>
             {generateButtons(props.word).map((word, i) => (
                 <WordButton number={i} word={word} answer={(a) => {answer(a)}} />
             ))}

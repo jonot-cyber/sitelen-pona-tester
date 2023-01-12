@@ -1,8 +1,8 @@
-import "./Word.css"
+import styles from "./Word.module.css"
 
 function Word(props) {
     return (
-        <div class="word-center"><h1 className="word">{props.word}</h1></div>
+        <div className={styles.center}><h1 className={styles.word}>{props.word}</h1></div>
     )
 }
 
