@@ -2,7 +2,7 @@ import "./App.css"
 import Word from "./Word/Word";
 import WordButtonList from "./WordButtonList/WordButtonList";
 import wordlist from "./wordlist";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function getWord() {
   // get random word from the word list
