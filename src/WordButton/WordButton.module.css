@@ -8,6 +8,14 @@
     display: flex;
 }
 
+@media (prefers-color-scheme: dark) {
+    .button {
+        background-color: black;
+        color: white;
+        border: 0.1em solid white;
+    }
+}
+
 @media (max-width: 1000px) {
     .button {
         margin: 0.1em;

@@ -7,11 +7,18 @@
     font-family: 'sitelen-pona-pona';
     font-size: 60vh;
     margin: 0;
+    color: black;
 }
 
 @media (max-width: 800px) {
     .word {
         font-size: 45vh;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .word {
+        color: white;
     }
 }
 
