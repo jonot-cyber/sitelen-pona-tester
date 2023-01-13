@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div>
-      <div class="center">
+      <div className="center">
         <Word word={word}/>
         <WordButtonList word={word} answer={() => setWord(getWord())}/>
       </div>
