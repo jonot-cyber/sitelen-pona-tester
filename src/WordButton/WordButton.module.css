@@ -20,6 +20,10 @@
     .button {
         margin: 0.1em;
     }
+
+    .number {
+        display: none;
+    }
 }
 
 
