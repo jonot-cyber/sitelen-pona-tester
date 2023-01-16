@@ -1,12 +1,15 @@
+import React from "react";
 import { useEffect } from "react";
 
-function WordButton(props) {
-    function keyPressListener(e) {
+function WordButton(props: { number: number; answer: (word: string) => void; word: string; }) {
+    function keyPressListener(e: KeyboardEvent) {
+        let keyNumber: number = parseInt(e.key);
+
         // return if key wasn't 1-4
-        if (e.key < 1 || e.key > 4) {
+        if (keyNumber < 1 || keyNumber > 4) {
             return;
         }
-        if (e.key === (props.number + 1).toString()) {
+        if (keyNumber === (props.number + 1)) {
             props.answer(props.word);
         }
     }

@@ -1,11 +1,12 @@
-import WordButton from "./WordButton";
+import React from "react";
+import WordButton from "./WordButton.tsx";
 import wordlist from "./wordlist";
 
-function generateButtons(correctWord) {
+function generateButtons(correctWord: string) {
     const possibleIncorrectWords = wordlist.filter(
         (word) => word !== correctWord
     );
-    let buttonWords = [];
+    let buttonWords: string[] = [];
     buttonWords.push(correctWord);
     for (let i = 0; i < 3; i++) {
         const randomIndex = Math.floor(
@@ -23,8 +24,8 @@ function generateButtons(correctWord) {
     return buttonWords;
 }
 
-function WordButtonList(props) {
-    function answer(anAnswer) {
+function WordButtonList(props: { word: string; answer: () => void; }) {
+    function answer(anAnswer: string) {
         if (anAnswer === props.word) {
             alert("Correct!")
         } else {
@@ -36,7 +37,7 @@ function WordButtonList(props) {
     return (
         <div className="flex w-screen flex-col md:flex-row">
             {generateButtons(props.word).map((word, i) => (
-                <WordButton number={i} word={word} answer={(a) => {answer(a)}} />
+                <WordButton number={i} word={word} answer={(a: string) => {answer(a)}} />
             ))}
         </div>
     );
