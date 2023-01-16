@@ -16,9 +16,9 @@ function WordButton(props) {
         return () => window.removeEventListener("keypress", keyPressListener)
     })
 
-    return <button className="border-2 border-black grow m-2 flex p-2" onClick={() => props.answer(props.word)}>
+    return <button className="border-4 border-black grow m-2 flex p-2" onClick={() => props.answer(props.word)}>
         <span className="text-center text-4xl grow">{props.word}</span>
-        <span className="text-sm hidden md:block">{props.number+1}</span>
+        <span className="hidden md:block">{props.number+1}</span>
     </button>;
 }
 
