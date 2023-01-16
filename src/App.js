@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div>
-      <div className="flex">
+      <div className="flex flex-col h-screen">
         <Word word={word}/>
         <WordButtonList word={word} answer={() => setWord(getWord())}/>
       </div>

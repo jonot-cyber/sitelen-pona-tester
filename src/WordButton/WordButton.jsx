@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import styles from "./WordButton.module.css"
 
 function WordButton(props) {
     function keyPressListener(e) {
@@ -17,9 +16,9 @@ function WordButton(props) {
         return () => window.removeEventListener("keypress", keyPressListener)
     })
 
-    return <button className={styles.button} onClick={() => props.answer(props.word)}>
-        <span className={styles.word}>{props.word}</span>
-        <span className={styles.number}>{props.number+1}</span>
+    return <button className="border-2 border-black grow m-2 flex p-2" onClick={() => props.answer(props.word)}>
+        <span className="text-center text-4xl grow">{props.word}</span>
+        <span className="text-sm">{props.number+1}</span>
     </button>;
 }
 
