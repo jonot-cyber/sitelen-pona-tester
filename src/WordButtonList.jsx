@@ -1,5 +1,5 @@
-import WordButton from "../WordButton/WordButton";
-import wordlist from "../wordlist";
+import WordButton from "./WordButton";
+import wordlist from "./wordlist";
 
 function generateButtons(correctWord) {
     const possibleIncorrectWords = wordlist.filter(

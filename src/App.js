@@ -1,5 +1,5 @@
-import Word from "./Word/Word";
-import WordButtonList from "./WordButtonList/WordButtonList";
+import Word from "./Word";
+import WordButtonList from "./WordButtonList";
 import wordlist from "./wordlist";
 import { useState } from "react";
 
