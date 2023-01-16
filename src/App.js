@@ -1,4 +1,3 @@
-import "./App.css"
 import Word from "./Word/Word";
 import WordButtonList from "./WordButtonList/WordButtonList";
 import wordlist from "./wordlist";
