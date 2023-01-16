@@ -1,7 +1,6 @@
 module.exports = {
-    //... rest
-    resolve: {
-      extensions: ['.ts', '.tsx'],
-    },
-  };
-  
+  //...
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  },
+};

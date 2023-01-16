@@ -1,5 +1,5 @@
 import React from "react";
-import WordButton from "./WordButton.tsx";
+import WordButton from "./WordButton";
 import wordlist from "./wordlist";
 
 function generateButtons(correctWord: string) {
