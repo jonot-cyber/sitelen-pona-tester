@@ -34,7 +34,7 @@ function WordButtonList(props) {
     }
     
     return (
-        <div className="flex w-screen">
+        <div className="flex w-screen flex-col md:flex-row">
             {generateButtons(props.word).map((word, i) => (
                 <WordButton number={i} word={word} answer={(a) => {answer(a)}} />
             ))}

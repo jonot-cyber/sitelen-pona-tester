@@ -18,7 +18,7 @@ function WordButton(props) {
 
     return <button className="border-2 border-black grow m-2 flex p-2" onClick={() => props.answer(props.word)}>
         <span className="text-center text-4xl grow">{props.word}</span>
-        <span className="text-sm">{props.number+1}</span>
+        <span className="text-sm hidden md:block">{props.number+1}</span>
     </button>;
 }
 
