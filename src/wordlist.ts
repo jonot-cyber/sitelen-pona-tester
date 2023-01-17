@@ -1,4 +1,4 @@
-const wordlist = [
+const wordlist: string[] = [
     "a",
     "akesi",
     "ala",

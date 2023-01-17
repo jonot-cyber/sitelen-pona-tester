@@ -9,7 +9,7 @@ npm run build
 
 To develop it, use:
 ```
-npm run dev
+npm run start
 ```
 
 This project was made possible with the great [sitelen pona pona](https://jackhumbert.github.io/sitelen-pona-pona/) font

@@ -1,6 +1,5 @@
-import "./App.css"
-import Word from "./Word/Word";
-import WordButtonList from "./WordButtonList/WordButtonList";
+import Word from "./Word";
+import WordButtonList from "./WordButtonList";
 import wordlist from "./wordlist";
 import { useState } from "react";
 
@@ -14,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <div className="center">
+      <div className="flex flex-col h-screen dark:bg-black">
         <Word word={word}/>
         <WordButtonList word={word} answer={() => setWord(getWord())}/>
       </div>
